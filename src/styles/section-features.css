@@ -1,0 +1,101 @@
+.section-features {
+  background-image: url(/src/images/section3/Group.png);
+  padding-left: 164px;
+  padding-right: 166px;
+}
+
+@media (max-width: 1259px) {
+  .section-features {
+    padding: 0 71px 0 71px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-features {
+    padding: 0 20px 69px 20px;
+    background: #FAFAFA;
+  }
+}
+
+.section-features__subtitle {
+  margin-top: 133px;
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #00ADEE;
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 37px;
+  color: #FFFFFF;
+  padding-top: 76px;
+  padding-bottom: 59px;
+  text-align: center;
+}
+
+@media (max-width: 1259px) {
+  .section-features__subtitle {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-features__subtitle {
+    margin-top: 54px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-features__subtitle {
+    color: #333333;
+    padding-top: 42px;
+    padding-bottom: 0;
+  }
+}
+
+.section-features-characteristic {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 87px;
+  grid-row-gap: 40px;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+@media (max-width: 767px) {
+  .section-features-characteristic {
+    display: block;
+    list-style-type: none;
+  }
+}
+
+.section-features-characteristic-item {
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 767px) {
+  .section-features-characteristic-item {
+    text-align: center;
+    color: #4F4F4F;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-features-characteristic-item__icon {
+    -webkit-filter: invert(46%) sepia(79%) saturate(2017%) hue-rotate(161deg) brightness(94%) contrast(102%);
+            filter: invert(46%) sepia(79%) saturate(2017%) hue-rotate(161deg) brightness(94%) contrast(102%);
+    margin-bottom: 16px;
+    margin-top: 54px;
+  }
+}
+/*# sourceMappingURL=section-features.css.map */

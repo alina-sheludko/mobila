@@ -1,0 +1,14 @@
+@import './reset.scss';
+@import './mixins.scss';
+@import './header.scss';
+
+//main start
+@import './section-intro.scss';
+@import './section-get-started.scss';
+@import './section-features.scss';
+@import './section-reviews.scss';
+@import './section-editors.scss';
+@import './section-download.scss';
+//main end
+
+@import './footer.scss';

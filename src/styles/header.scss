@@ -1,0 +1,99 @@
+//header start
+.header{
+  max-width: 100%;
+  width: calc(max-width - 163px);
+  padding-left: 163px;
+  padding-bottom: 164px;
+  background: #F4F6F9;
+  background-image: url('/src/images/phones.svg');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+
+  @media (max-width: 1350px) {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(255,255,255, 0),
+      rgba(255,255,255, 1.0)
+    ),url('/src/images/phones.svg');
+  }
+
+  @media (max-width: 1259px) {
+    padding-left: 71px;
+    padding-bottom: 71px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 0 20px 20px 20px;
+  }
+
+  &__logo{
+    margin-top: 61px;
+
+    @media (max-width: 767px) {
+      margin-top: 34px;
+    }
+  }
+
+  &__title{
+    max-width: 546px;
+    width: 100%;
+    margin-top: 133px;
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.03em;
+    color: #333333;
+
+    @media (max-width: 767px) {
+      margin-top: 86px;
+      max-width: fit-content;
+      font-size: 30px;
+      line-height: 40px;
+      text-align: center;
+
+    }
+  }
+
+  &__info{
+    max-width: 453px;
+    width: 100%;
+    margin-top: 30px;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #4F4F4F;
+
+    @media (max-width: 767px) {
+      margin-top: 33px;
+      max-width: fit-content;
+      font-size: 16px;
+      line-height: 23px;
+      text-align: center;
+
+    }
+  }
+
+  &-download{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+
+    @media (max-width: 767px) {
+      gap: 28px;
+      justify-content: center;
+    }
+
+   &-link{
+     &__img{
+      width: 100%;
+      height: 100%;
+     }
+   }
+
+  }
+}
+//header end

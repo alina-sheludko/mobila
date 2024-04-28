@@ -1,0 +1,75 @@
+@import './mixins.scss';
+
+.section-download{
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  &-photos{
+    &__phone{
+      width: 100%;
+      height: 100%;
+      max-width: 1075px;
+      max-height: 1408px;
+    }
+  }
+
+  &-text{
+    padding-left: 77px;
+    padding-right: 20px;
+    margin: 0;
+
+    @media (max-width: 767px) {
+      padding: 0 20px 0 20px;
+      text-align: center;
+    }
+
+    &__title{
+      @include text;
+      @include title;
+      margin-top: 105px;
+
+      @media (max-width: 767px) {
+        margin-top: 19px;
+      }
+    }
+
+    &__info{
+      @include text;
+      @include info;
+      margin-top: 35px;
+      margin-bottom: 38px;
+      max-width: 535px;
+
+      @media (max-width: 767px) {
+        margin-top: 15px;
+        margin-bottom: 37px;
+      }
+    }
+
+    &-buttons{
+      display: flex;
+      gap: 35px;
+
+      @media (max-width: 1259px) {
+        margin-bottom: 40px;
+      }
+
+      @media (max-width: 767px) {
+        gap: 28px;
+        justify-content: space-around;
+        margin-bottom: 38px;
+
+        &__img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

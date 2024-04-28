@@ -1,0 +1,91 @@
+@import './mixins.scss';
+
+.section-get-started{
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  &-text{
+    z-index: 1;
+    padding-left: 162px;
+    margin: 0;
+    max-width: 480px;
+
+    @media (max-width: 1259px) {
+      padding-left: 71px;
+    }
+
+    @media (max-width: 767px) {
+      padding: 0 20px 0 20px;
+      max-width: fit-content;
+      width: 100%;
+      position: unset;
+    }
+
+    &__subtitle{
+      @include text;
+      margin-top: 217px;
+
+      @media (max-width: 1259px) {
+        margin-top: 50px;
+      }
+    }
+
+    &__title{
+      @include text;
+      @include title;
+    }
+
+    &__info{
+      @include text;
+      @include info;
+
+      @media (max-width: 767px) {
+        max-width: initial;
+      }
+    }
+
+    &__link{
+      @include text;
+      @include link;
+      margin-top: 54px;
+      margin-bottom: 171px;
+
+      @media (max-width: 1259px) {
+        margin-top: 22px;
+        margin-bottom: 40px;
+      }
+
+      @media (max-width: 767px) {
+        margin-bottom: 22px;
+      }
+    }
+  }
+
+  &-telephone{
+    height: 100%;
+    position: absolute;
+
+    @media (max-width: 1259px) {
+      right: 35px;
+    }
+
+    @media (max-width: 900px) {
+      right: 0;
+    }
+
+    @media (max-width: 767px) {
+      max-width: 400px;
+      position: relative;
+      bottom: 0%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

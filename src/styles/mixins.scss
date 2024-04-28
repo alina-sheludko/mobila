@@ -1,0 +1,52 @@
+@mixin text {
+  margin-top: 133px;
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #00ADEE;
+
+  @media (max-width: 1259px) {
+    margin-top: 50px;
+  }
+
+  @media (max-width: 767px) {
+    margin-top: 54px;
+    text-align: center;
+  }
+}
+
+@mixin title {
+  margin-top: 27px;
+  font-size: 28px;
+  line-height: 37px;
+  color: #333333;
+}
+
+@mixin info {
+  max-width: 407px;
+  margin-top: 27px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #4F4F4F;
+
+  @media (max-width: 767px) {
+    margin-top: 20px;
+  }
+}
+
+@mixin link {
+  display: inline-block;
+  margin-top: 22px;
+  text-decoration: none;
+
+  @media (max-width: 1259px) {
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 767px) {
+    margin-top: 19px;
+    margin-bottom: 22px;
+  }
+}
