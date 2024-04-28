@@ -60,7 +60,7 @@ table {
   padding-left: 163px;
   padding-bottom: 164px;
   background: #F4F6F9;
-  background-image: url("/src/images/phones.svg");
+  background-image: url("/mobila/images/phones.svg");
   background-repeat: no-repeat;
   background-position: top right;
   background-size: contain;
@@ -68,8 +68,8 @@ table {
 
 @media (max-width: 1350px) {
   .header {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(white)), url("/src/images/phones.svg");
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), white), url("/src/images/phones.svg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(white)), url("/mobila/images/phones.svg");
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), white), url("/mobila/images/phones.svg");
   }
 }
 
@@ -598,7 +598,7 @@ table {
 }
 
 .section-features {
-  background-image: url(/src/images/section3/Group.png);
+  background-image: url(/mobila/images/section3/Group.png);
   padding-left: 164px;
   padding-right: 166px;
 }
